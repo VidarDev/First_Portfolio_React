@@ -1,15 +1,23 @@
-// import './styles/_main.scss'
-import { OrbitControls, PerspectiveCamera, Environment, Effects } from "@react-three/drei";
-import { Canvas } from '@react-three/fiber';
 import { Suspense, useState } from "react";
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, PerspectiveCamera, Environment } from "@react-three/drei";
+import { Noise, EffectComposer } from "@react-three/postprocessing";
+import { Perf } from "r3f-perf";
 import { Avatar } from "./components/Avatar";
 
-function SceneApp() {
 
-    const [hovered, setHovered] = useState(false);
+function ThreeJsScene() {
+
+    // const [hovered, setHovered] = useState(false);
     
     return (
         <>
+            <Perf position="top-left" />
+
+            <EffectComposer>
+                <Noise premultiply/>
+            </EffectComposer>
+
             <Environment files={
                 [
                     "./assets/environment.webp",
@@ -26,12 +34,7 @@ function SceneApp() {
             
             <Avatar position={[0 , -4.25 , 0]} rotation={[-0.25, 0, 0]} />
             
-            {/* <Icosahedron
-                onPointerEnter={() => setHovered(true)}
-                onPointerLeave={() => setHovered(false)}
-            >
-                <meshBasicMaterial color={hovered ? "yellow" : "blue"} />
-            </Icosahedron> */}
+            {/* <Icosahedron onPointerEnter={() => setHovered(true)} onPointerLeave={() => setHovered(false)}> <meshBasicMaterial color={hovered ? "yellow" : "blue"} /> </Icosahedron> */}
         
             <pointLight
                 intensity={0.5}
@@ -46,18 +49,15 @@ function SceneApp() {
                 position={[0.04, 7.68, 8.36]}
                 rotation={[-0.25, 0.38, 1.04]}
             />
-
-            <Effects>
-            </Effects>
         </>
     );
 };
 
-function App() {
+export function App() {
     return (
         <Suspense fallback={null}>
             <Canvas shadows>
-                <SceneApp />
+                <ThreeJsScene />
             </Canvas>
         </Suspense>
     );
