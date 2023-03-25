@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --c1-dark: #930817;
+    --c1-standard: #cf0b21;
+    --c1-light: rgba(207, 11, 33, 0.3);
+
+    --c2-dark: #e8e8e8;
+    --c2-standard: #fafafa;
+    --c2-light: #ffffff;
+
+    --c3-standard: #101010;
+
+    --text-light: #35383f;
+    --text-standard: #212121;
+}
+
+$c1-dark: var(--c1-dark);
+$c1-standard: var(--c1-standard);
+$c1-light: var(--c1-light);
+
+$c2-dark: var(--c2-dark);
+$c2-standard: var(--c2-standard);
+$c2-light: var(--c2-light);
+
+$c3-standard: var(--c3-standard);
+
+$text-light: var(--text-light);
+$text-standard: var(--text-standard);
+
+ul {
+    list-style: none;
+}
+
+.disable {
+    display: none !important;
+}

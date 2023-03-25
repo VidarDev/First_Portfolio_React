@@ -1,14 +1,22 @@
-import { Suspense } from 'react'
+import React, { Suspense, useEffect } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { ThreeJsScene } from './ThreeJsScene'
+import ThreeJsScene from './ThreeJsScene'
+import Nav from './components/Nav'
+import Vide from './components/Vide'
+import Preloader from './components/Preloader'
 
-export function App() {
+const App = () => {
     return (
-        <Suspense fallback={null}>
-            <Canvas shadows>
-                <ThreeJsScene />
-            </Canvas>
-        </Suspense>
+        <>
+            <Preloader />
+            <Nav />
+            <Suspense fallback={null}>
+                <Canvas shadows>
+                    <ThreeJsScene />
+                </Canvas>
+            </Suspense>
+            <Vide />
+        </>
     )
 }
 

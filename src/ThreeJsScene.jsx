@@ -8,7 +8,7 @@ import { Noise, EffectComposer } from '@react-three/postprocessing'
 import { Perf } from 'r3f-perf'
 import { Avatar } from './components/Avatar'
 
-export function ThreeJsScene() {
+const ThreeJsScene = () => {
     // const [hovered, setHovered] = useState(false);
 
     return (
@@ -46,7 +46,7 @@ export function ThreeJsScene() {
                 zoom={4}
             />
 
-            <Avatar position={[0, -4.25, 0]} rotation={[-0.25, 0, 0]} />
+            <Avatar position={[0, -4.35, 0]} rotation={[-0.25, 0, 0]} />
 
             {/* <Icosahedron onPointerEnter={() => setHovered(true)} onPointerLeave={() => setHovered(false)}> <meshBasicMaterial color={hovered ? "yellow" : "blue"} /> </Icosahedron> */}
 
@@ -66,3 +66,4 @@ export function ThreeJsScene() {
         </>
     )
 }
+export default ThreeJsScene
