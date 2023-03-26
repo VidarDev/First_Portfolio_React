@@ -10,6 +10,8 @@
 
 body {
     font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -42,10 +44,16 @@ $c3-standard: var(--c3-standard);
 $text-light: var(--text-light);
 $text-standard: var(--text-standard);
 
+$length-transition: 0.4;
+
 ul {
     list-style: none;
 }
 
 .disable {
     display: none !important;
+}
+
+.z-999 {
+    z-index: 999 !important;
 }
