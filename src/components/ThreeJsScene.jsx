@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { Suspense } from 'react'
 import {
     OrbitControls,
     PerspectiveCamera,
@@ -6,9 +6,10 @@ import {
 } from '@react-three/drei'
 import { Noise, EffectComposer } from '@react-three/postprocessing'
 import { Perf } from 'r3f-perf'
-import { Avatar } from './components/Avatar'
+import { Avatar } from './Avatar'
+import { Canvas } from '@react-three/fiber'
 
-const ThreeJsScene = () => {
+const ThreeJs = () => {
     // const [hovered, setHovered] = useState(false);
 
     return (
@@ -63,6 +64,18 @@ const ThreeJsScene = () => {
                 position={[0.04, 7.68, 8.36]}
                 rotation={[-0.25, 0.38, 1.04]}
             />
+        </>
+    )
+}
+
+const ThreeJsScene = () => {
+    return (
+        <>
+            <Suspense fallback={null}>
+                <Canvas shadows>
+                    <ThreeJs />
+                </Canvas>
+            </Suspense>
         </>
     )
 }
