@@ -1,0 +1,12 @@
+@import './variables.scss';
+@import './ui_kit.scss';
+@import './scenes/threejs/three_header.scss';
+@import './scenes/header.scss';
+@import './components/loader.scss';
+@import './pages/home_page.scss';
+@import './components/banner_scroll_animation.scss';
+
+.vide {
+    width: 100vw;
+    height: 100vh;
+}

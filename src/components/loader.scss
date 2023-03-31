@@ -1,0 +1,75 @@
+.loader {
+    position: fixed;
+    z-index: 10;
+    &:before,
+    &:after {
+        content: '';
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: $primary--hover;
+        z-index: -1;
+        transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
+        transform: translateX(0%) translateY(-100%);
+    }
+    &:after {
+        background: $background;
+        transition-delay: 0s;
+    }
+    &:before {
+        transition-delay: 0.1s;
+    }
+}
+
+.loader.is-active {
+    visibility: visible;
+    &:before,
+    &:after {
+        transform: translateX(0%) translateY(0%);
+    }
+    &:after {
+        transition-delay: 0.1s;
+    }
+    &:before {
+        transition-delay: 0s;
+    }
+}
+
+.preloader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transition: all $length-transition + s ease;
+    svg {
+        height: 100%;
+        max-height: 25vh;
+        min-height: 100px;
+        filter: drop-shadow(0 0 0.25rem $primary);
+        transform-origin: 50% 50%;
+        animation: rotate 20s linear infinite;
+        polygon {
+            stroke-dasharray: 15;
+            stroke-width: 1;
+            animation: preloader--animation 1s ease-in-out infinite;
+            stroke-dashoffset: -2;
+        }
+    }
+    &.is-active {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes preloader--animation {
+    to {
+        stroke-dashoffset: -2;
+    }
+    to {
+        stroke-dashoffset: 58;
+    }
+}
