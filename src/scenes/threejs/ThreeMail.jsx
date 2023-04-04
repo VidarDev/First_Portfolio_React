@@ -13,7 +13,7 @@ const ThreeJs = () => {
             <OrbitControls
                 enableZoom={false}
                 enablePan={false}
-                rotateSpeed={0.01}
+                rotateSpeed={0.05}
                 minPolarAngle={Math.PI / 2.05}
                 maxPolarAngle={Math.PI - Math.PI / 2.05}
             />
@@ -22,7 +22,7 @@ const ThreeJs = () => {
                 makeDefault
                 position={[0, 0, 7]}
                 fov={60}
-                zoom={2}
+                zoom={4}
             />
 
             <Mail position={[0, 0, 0]} rotation={[0, 0, 0]} />
@@ -43,7 +43,7 @@ function Rig() {
     const vec = new Vector3()
 
     return useFrame(() => {
-        camera.position.lerp(vec.set(mouse.x, mouse.y, camera.position.z), 0.1)
+        camera.position.lerp(vec.set(mouse.x, mouse.y, 7), 0.5)
         camera.lookAt(0, 0, 0)
     })
 }

@@ -1,0 +1,57 @@
+.card {
+    width: 100%;
+    aspect-ratio: 2/3;
+    perspective: 100vw;
+    position: relative;
+    margin: 0 auto 2.5rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        background-color: $primary--hover;
+        transform: rotate(12.5deg);
+    }
+    &:hover {
+        z-index: 4;
+    }
+    .card__content {
+        aspect-ratio: 2/3;
+        overflow: hidden;
+        border: 2px solid $primary;
+        border-radius: 1rem;
+        transition: all 0.15s ease-out;
+        background-color: black;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .glow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        transition: all 0.15s ease-out;
+        border-radius: 1rem;
+        mix-blend-mode: hard-light;
+        background: radial-gradient(
+            circle at 50% 0%,
+            rgb(184, 196, 211),
+            transparent
+        );
+    }
+    @media screen and (max-width: $breakpoints-sm) {
+        width: 70%;
+        margin-inline: auto;
+        margin: clamp(1.5rem, 0.1765rem + 5.8824vw, 3rem) auto;
+    }
+    @media screen and (max-width: $breakpoints-xs) {
+    }
+}

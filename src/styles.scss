@@ -1,10 +1,14 @@
 @import './variables.scss';
 @import './ui_kit.scss';
-@import './scenes/threejs/three_header.scss';
-@import './scenes/header.scss';
-@import './components/loader.scss';
-@import './pages/home_page.scss';
-@import './components/banner_scroll_animation.scss';
+@import './styles/ThreeHeader.scss';
+@import './styles/Header.scss';
+@import './styles/Loader.scss';
+@import './styles/HomePage.scss';
+@import './styles/BannerScrollAnimation.scss';
+@import './styles/Card.scss';
+@import './styles/SwiperComponent.scss';
+@import './styles/UI_Button.scss';
+@import './styles/ThreeMail.scss';
 
 .vide {
     width: 100vw;

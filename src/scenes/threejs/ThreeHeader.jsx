@@ -46,7 +46,7 @@ const ThreeJs = () => {
                 makeDefault
                 position={[0, 0, 7]}
                 fov={60}
-                zoom={3}
+                zoom={3.25}
             />
 
             <Avatar position={[0, -4.5, 0]} rotation={[0, 0, 0]} />
@@ -75,7 +75,7 @@ function Rig() {
     const vec = new Vector3()
 
     return useFrame(() => {
-        camera.position.lerp(vec.set(mouse.x, mouse.y, camera.position.z), 0.1)
+        camera.position.lerp(vec.set(mouse.x, mouse.y, 7), 0.1)
         camera.lookAt(0, 0, 0)
     })
 }

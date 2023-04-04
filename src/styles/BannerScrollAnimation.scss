@@ -1,0 +1,57 @@
+#banner {
+    &.banner {
+        position: relative;
+        border-top: 2px solid $primary;
+        border-bottom: 2px solid $primary;
+        padding: calc(clamp(2rem, 1.5385rem + 2.0513vw, 4rem) + 0.6vw) 0;
+        background-color: $background--dark;
+        .banner__content--top,
+        .banner__content--bottom {
+            position: absolute;
+            display: flex;
+            gap: 1rem;
+            font-size: clamp(2rem, 1.5385rem + 2.0513vw, 4rem);
+            line-height: 1.33;
+            flex-wrap: nowrap;
+            span {
+                white-space: nowrap;
+            }
+        }
+        .banner__content--top {
+            left: -50vw;
+            top: 0;
+            span {
+                &:nth-child(odd) {
+                    color: $primary;
+                    &:hover {
+                        color: $primary--hover;
+                    }
+                }
+                &:nth-child(even) {
+                    color: $text--standard;
+                }
+            }
+        }
+        .banner__content--bottom {
+            right: -50vw;
+            bottom: 0;
+            span {
+                &:nth-child(odd) {
+                    color: $text--standard;
+                }
+                &:nth-child(even) {
+                    color: $primary;
+                    &:hover {
+                        color: $primary--hover;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: $breakpoints-sm) {
+            padding: calc(clamp(2rem, 1.5385rem + 2.0513vw, 4rem) / 1.5) 0;
+            .banner__content--top {
+                left: -100vw;
+            }
+        }
+    }
+}

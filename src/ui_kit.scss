@@ -18,6 +18,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     margin: 0;
@@ -32,7 +36,6 @@ body {
     background-color: $background;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    scroll-behavior: smooth;
 }
 
 ul {
@@ -73,7 +76,26 @@ details > summary:first-of-type {
     outline-color: $primary--hover;
 }
 
-a {
+::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: $background;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    background: $primary;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: $primary--hover;
+}
+
+a.link {
     text-decoration: none !important;
     color: $text--standard;
     background-image: linear-gradient($primary, $primary);
@@ -85,7 +107,64 @@ a {
         background-image: linear-gradient($primary--hover, $primary--hover);
         background-size: 100% 100%;
         background-position: 0% 0%;
-        color: $text--white;
         transition: background-position 0.5s, background-size 0.3s ease-in 0.5s;
     }
+}
+
+p {
+    font-size: clamp(0.875rem, 0.7308rem + 0.641vw, 1.5rem);
+    line-height: 1.33;
+    text-align: justify;
+}
+
+.section__wrapper {
+    padding: calc(clamp(3rem, 3.3vw, 3.3vw) + 5rem) 0 1rem;
+
+    .section__subtitle {
+        text-align: center;
+        display: block;
+        color: $text--light;
+    }
+
+    .section__title {
+        text-align: center;
+        color: $primary;
+        margin-bottom: 3rem;
+    }
+    .section__container {
+        width: 100%;
+        max-width: $container-xxxl;
+        margin-inline: auto;
+        @media screen and (max-width: $breakpoints-xxxl) {
+            max-width: $container-xxl;
+        }
+        @media screen and (max-width: $breakpoints-xxl) {
+            max-width: $container-xl;
+        }
+        @media screen and (max-width: $breakpoints-xl) {
+            max-width: $container-lg;
+        }
+        @media screen and (max-width: $breakpoints-lg) {
+            max-width: $container-sm;
+        }
+        @media screen and (max-width: $breakpoints-sm) {
+            padding-right: clamp(2rem, 3.3vw, 3.3vw);
+            padding-left: clamp(2rem, 3.3vw, 3.3vw);
+        }
+    }
+}
+
+h2 {
+    font-size: clamp(2rem, 1.5385rem + 2.0513vw, 4rem);
+    line-height: 1.33;
+}
+
+h3 {
+    font-size: clamp(1.75rem, 1.3462rem + 1.7949vw, 3.5rem);
+    line-height: 1.33;
+}
+
+h4 {
+    font-size: clamp(1.5rem, 1.2115rem + 1.2821vw, 2.75rem);
+    line-height: 1.33;
 }

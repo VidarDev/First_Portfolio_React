@@ -2,19 +2,21 @@
 
 /* ========== Variables :root ========== */
 :root {
-    --breakpoints-xs: 400px;
-    --breakpoints-sm: 576px;
-    --breakpoints-md: 768px;
-    --breakpoints-lg: 992px;
-    --breakpoints-xl: 1200px;
-    --breakpoints-xxl: 1500px;
+    --breakpoints-xs: 360px;
+    --breakpoints-sm: 768px;
+    --breakpoints-md: 1024px;
+    --breakpoints-lg: 1272px;
+    --breakpoints-xl: 1440px;
+    --breakpoints-xxl: 1600px;
+    --breakpoints-xxxl: 1920px;
 
-    --container-xs: 400px;
-    --container-sm: 540px;
-    --container-md: 720px;
-    --container-lg: 960px;
-    --container-xl: 1140px;
-    --container-xxl: 1440px;
+    --container-xs: 328px;
+    --container-sm: 744px;
+    --container-md: 928px;
+    --container-lg: 1128px;
+    --container-xl: 1312px;
+    --container-xxl: 1408px;
+    --container-xxxl: 1688px;
 
     --primary: #008c8c;
     --primary--hover: #007e7e;
@@ -47,12 +49,13 @@
 }
 
 /* ========== Breakpoints and containers ========== */
-$breakpoints-xs: 400px;
-$breakpoints-sm: 576px;
-$breakpoints-md: 768px;
-$breakpoints-lg: 992px;
-$breakpoints-xl: 1200px;
-$breakpoints-xxl: 1500px;
+$breakpoints-xs: 360px;
+$breakpoints-sm: 768px;
+$breakpoints-md: 1024px;
+$breakpoints-lg: 1272px;
+$breakpoints-xl: 1440px;
+$breakpoints-xxl: 1600px;
+$breakpoints-xxxl: 1920px;
 
 $container-xs: var(--container-xs);
 $container-sm: var(--container-sm);
@@ -60,6 +63,7 @@ $container-md: var(--container-md);
 $container-lg: var(--container-lg);
 $container-xl: var(--container-xl);
 $container-xxl: var(--container-xxl);
+$container-xxxl: var(--container-xxxl);
 
 /* ========== Colors ========== */
 $primary: var(--primary);
