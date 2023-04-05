@@ -34,8 +34,8 @@ const SectionSkills = () => {
                         data-aos-duration="500"
                     >
                         Mon principal domaine d'expertise est le{' '}
-                        <strong>développement Front-end</strong> en particulier
-                        sur les CMS Prestashop et Wordpress.J'ai acquis des
+                        <strong>développement Front-End</strong> en particulier
+                        sur les CMS Prestashop et Wordpress. J'ai acquis des
                         compétences en TMA (Tierce Maintenance Applicative) sur
                         ces plateformes lors de mon alternance de Licence
                         Professionnelle chez{' '}

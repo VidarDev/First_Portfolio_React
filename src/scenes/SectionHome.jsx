@@ -41,7 +41,7 @@ const SectionHome = () => {
                         data-aos-duration="500"
                     >
                         Développeur
-                    </span>
+                    </span>{' '}
                     <span
                         ref={spanScroll}
                         className={spanScrollVisible ? '' : 'disable'}
@@ -53,6 +53,7 @@ const SectionHome = () => {
                         data-aos-delay="1600"
                         data-aos-duration="500"
                     >
+                        {' '}
                         Front-End
                     </span>
                 </h1>

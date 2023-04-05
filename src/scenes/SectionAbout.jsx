@@ -46,7 +46,7 @@ const SectionAbout = () => {
                             <strong>
                                 alternance en développement web Front-end
                             </strong>{' '}
-                            de deux ans our compléter mon diplôme de niveau
+                            de deux ans pour compléter mon diplôme de niveau
                             Bac+5, à partir du 10 septembre 2023.
                         </p>
                         <p

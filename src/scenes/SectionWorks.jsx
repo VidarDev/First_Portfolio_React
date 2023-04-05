@@ -31,7 +31,7 @@ const SectionWorks = () => {
                             En tant que{' '}
                             <strong>développeur web Front-end</strong>, j'ai
                             acquis des compétences en intégration de chartes
-                            graphiques, d'UI kits et de demandes clients me
+                            graphiques, d'UI kits et de demandes clients, me
                             permettent de gérer divers tickets et de communiquer
                             efficacement avec les clients. J'utilise des
                             technologies telles que HTML, CSS, JS, jQuery et

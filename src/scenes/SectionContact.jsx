@@ -1,5 +1,5 @@
 import React from 'react'
-import ThreeMail from '../components/Canvas/ThreeMail'
+import ThreeMail from '../components/canvas/ThreeMail'
 import Button from '../components/Button'
 
 const SectionContact = () => {
@@ -32,7 +32,7 @@ const SectionContact = () => {
                             Je vous remercie d'avoir consulté mon{' '}
                             <strong>portfolio</strong>. J'espère que les
                             informations concernant mes compétences en{' '}
-                            <strong>développement web Front-end</strong>ont
+                            <strong>développement web Front-end</strong> ont
                             retenu votre attention.
                         </p>
                         <p

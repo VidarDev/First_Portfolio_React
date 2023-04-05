@@ -43,7 +43,7 @@ const Header = () => {
                         </li>
                         <li className="nav__list--item">
                             <a href="#contact" onClick={toogleNavModal}>
-                                Contacte
+                                Contact
                             </a>
                         </li>
                     </ul>
