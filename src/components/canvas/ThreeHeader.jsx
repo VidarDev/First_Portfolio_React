@@ -5,7 +5,7 @@ import {
     PerspectiveCamera,
 } from '@react-three/drei'
 import { Perf } from 'r3f-perf'
-import { Avatar } from '../../components/Models/Avatar'
+import { Avatar } from '../models/Avatar'
 import { Canvas, useThree, useFrame } from '@react-three/fiber'
 import { Vector3 } from 'three'
 import { EffectComposer, Glitch } from '@react-three/postprocessing'

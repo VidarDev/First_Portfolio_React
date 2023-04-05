@@ -1,7 +1,7 @@
 import { Suspense } from 'react'
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
 import { Perf } from 'r3f-perf'
-import { Mail } from '../../components/Models/Mail'
+import { Mail } from '../models/Mail'
 import { Canvas, useThree, useFrame } from '@react-three/fiber'
 import { Vector3 } from 'three'
 
@@ -52,7 +52,12 @@ const ThreeMail = () => {
     return (
         <>
             <Suspense fallback={null}>
-                <Canvas shadows>
+                <Canvas
+                    shadows
+                    data-aos="zoom-in-left"
+                    data-aos-delay="500"
+                    data-aos-duration="500"
+                >
                     <ThreeJs />
                     <Rig />
                 </Canvas>

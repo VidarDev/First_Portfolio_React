@@ -1,10 +1,16 @@
 import React from 'react'
 
-const Button = ({ className, href, children }) => {
+const Button = ({ className, href, children, target }) => {
     return (
         <>
-            <a href={href} className={`btn ${className}`}>
-                {children}
+            <a
+                data-aos="zoom-in"
+                data-aos-duration="500"
+                href={href}
+                target={target}
+                className={`btn ${className}`}
+            >
+                <span>{children}</span>
             </a>
         </>
     )

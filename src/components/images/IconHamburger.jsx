@@ -9,6 +9,11 @@ const IconHamburger = ({ onClick, className }) => {
             width="80"
             className={`hamburger-icon ${className}`}
             onClick={onClick}
+            role="img"
+            alt="Icon pour ouvrir le menu de navigation"
+            aria-label="Icon pour ouvrir le menu de navigation"
+            title="Icon pour ouvrir le menu de navigation"
+            aria-labelledby="Icon pour ouvrir le menu de navigation"
         >
             <path
                 className="line top"

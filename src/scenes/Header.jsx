@@ -28,7 +28,7 @@ const Header = () => {
                     <ul className="nav__list">
                         <li className="nav__list--item">
                             <a href="#about" onClick={toogleNavModal}>
-                                A propos
+                                À propos
                             </a>
                         </li>
                         <li className="nav__list--item">
@@ -43,11 +43,17 @@ const Header = () => {
                         </li>
                         <li className="nav__list--item">
                             <a href="#contact" onClick={toogleNavModal}>
-                                Contact
+                                Contacte
                             </a>
                         </li>
                     </ul>
-                    <Button>Mon CV</Button>
+                    <Button
+                        className="icon-download"
+                        target="_blank"
+                        href="/assets/CV_Richier_Théo.pdf"
+                    >
+                        CV
+                    </Button>
                 </nav>
             </div>
         </>

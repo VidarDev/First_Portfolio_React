@@ -2,7 +2,7 @@
 
 /* ========== Variables :root ========== */
 :root {
-    --breakpoints-xs: 360px;
+    --breakpoints-xs: 400px;
     --breakpoints-sm: 768px;
     --breakpoints-md: 1024px;
     --breakpoints-lg: 1272px;
@@ -41,15 +41,17 @@
     --z_negative: -1;
     --z_zero: 0;
     --z_default: 1;
+    --z_5: 5;
     --z_positive: 10;
     --z_error: 999;
 
+    --line_height: 1.33;
     --weight_standard: 400;
     --weight_bold: 700;
 }
 
 /* ========== Breakpoints and containers ========== */
-$breakpoints-xs: 360px;
+$breakpoints-xs: 400px;
 $breakpoints-sm: 768px;
 $breakpoints-md: 1024px;
 $breakpoints-lg: 1272px;
@@ -93,6 +95,7 @@ $p-8: var(--p-8);
 $p-16: var(--p-16);
 $p-32: var(--p-32);
 
+$line_height: var(--line_height);
 $weight_standard: var(--weight_standard);
 $weight_bold: var(--weight_bold);
 
@@ -100,5 +103,6 @@ $weight_bold: var(--weight_bold);
 $z_negative: var(--z_negative);
 $z_zero: var(--z_zero);
 $z_default: var(--z_default);
+$z_5: var(--z_5);
 $z_positive: var(--z_positive);
 $z_error: var(--z_error);

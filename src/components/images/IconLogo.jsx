@@ -10,6 +10,11 @@ const IconLogo = () => {
             strokeMiterlimit="2"
             clipRule="evenodd"
             viewBox="0 0 750 450"
+            role="img"
+            alt="Logo de Théo Richier"
+            aria-label="Logo de Théo Richier"
+            title="Logo de Théo Richier"
+            aria-labelledby="Logo de Théo Richier"
         >
             <path d="M750 .01H0l72.579 78.814h258.093l.041 159.941 78.979-68.707V78.824h227.553L330.713 342.771V449.09l164.134-143.216L624.862 449.09h107.461L555.297 254.346 750 86.972V.01Z"></path>
         </svg>

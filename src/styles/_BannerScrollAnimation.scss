@@ -7,13 +7,14 @@
         background-color: $background--dark;
         .banner__content--top,
         .banner__content--bottom {
+            margin-bottom: 0;
             position: absolute;
             display: flex;
             gap: 1rem;
-            font-size: clamp(2rem, 1.5385rem + 2.0513vw, 4rem);
-            line-height: 1.33;
             flex-wrap: nowrap;
             span {
+                font-size: clamp(2rem, 1.5385rem + 2.0513vw, 4rem);
+                line-height: $line_height;
                 white-space: nowrap;
             }
         }
@@ -29,6 +30,9 @@
                 }
                 &:nth-child(even) {
                     color: $text--standard;
+                    &:hover {
+                        color: $text--light;
+                    }
                 }
             }
         }
@@ -38,6 +42,9 @@
             span {
                 &:nth-child(odd) {
                     color: $text--standard;
+                    &:hover {
+                        color: $text--light;
+                    }
                 }
                 &:nth-child(even) {
                     color: $primary;

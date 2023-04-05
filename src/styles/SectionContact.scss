@@ -1,0 +1,42 @@
+#contact .section__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 2rem;
+    .contact__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        p:last-of-type {
+            margin-bottom: $m-32;
+        }
+    }
+    @media screen and (max-width: $breakpoints-xxxl) {
+    }
+    @media screen and (max-width: $breakpoints-xxl) {
+    }
+    @media screen and (max-width: $breakpoints-xl) {
+        .contact__content {
+            p:last-of-type {
+                margin-bottom: $m-16;
+            }
+        }
+    }
+    @media screen and (max-width: $breakpoints-lg) {
+    }
+    @media screen and (max-width: $breakpoints-md) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        row-gap: 2rem;
+        .btn {
+            min-width: 300px;
+        }
+    }
+    @media screen and (max-width: $breakpoints-sm) {
+        .btn {
+            min-width: 50%;
+        }
+    }
+    @media screen and (max-width: $breakpoints-xs) {
+    }
+}

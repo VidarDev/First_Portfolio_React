@@ -61,11 +61,20 @@ const Card = () => {
     }, [])
 
     return (
-        <div className="card" ref={cardRef}>
+        <div
+            data-aos="zoom-in-right"
+            data-aos-delay="500"
+            data-aos-duration="500"
+            className="card"
+            ref={cardRef}
+        >
             <div className="card__content">
                 <img
-                    src="https://theo.richier.org/assets/img/Photo.jpg"
-                    alt="..."
+                    src="/assets/Photo.webp"
+                    alt="La photo de Théo Richier"
+                    role="img"
+                    title="La photo de Théo Richier"
+                    aria-label="La photo de Théo Richier"
                 />
             </div>
             <div className="glow"></div>

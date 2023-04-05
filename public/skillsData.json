@@ -1,0 +1,82 @@
+[
+    {
+        "image": "/assets/logos/JavaScript.svg",
+        "name": "JavaScript",
+        "url": "https://developer.mozilla.org/fr/docs/Web/JavaScript"
+    },
+    {
+        "image": "/assets/logos/React.svg",
+        "name": "React",
+        "url": "https://fr.reactjs.org/"
+    },
+    {
+        "image": "/assets/logos/Gsap-greensock.svg",
+        "name": "Gsap",
+        "url": "https://greensock.com/gsap/"
+    },
+    {
+        "image": "/assets/logos/NodeJs.svg",
+        "name": "Node Js",
+        "url": "https://nodejs.org/en"
+    },
+    {
+        "image": "/assets/logos/HTML.svg",
+        "name": "HTML 5",
+        "url": "https://developer.mozilla.org/fr/docs/Web/HTML"
+    },
+    {
+        "image": "/assets/logos/CSS.svg",
+        "name": "CSS 3",
+        "url": "https://developer.mozilla.org/fr/docs/Web/CSS"
+    },
+    {
+        "image": "/assets/logos/Sass.svg",
+        "name": "Sass",
+        "url": "https://sass-lang.com/"
+    },
+    {
+        "image": "/assets/logos/Bootstrap.svg",
+        "name": "Bootstrap",
+        "url": "https://getbootstrap.com/"
+    },
+    {
+        "image": "/assets/logos/Git.svg",
+        "name": "Git",
+        "url": "https://git-scm.com/"
+    },
+    {
+        "image": "/assets/logos/Ubuntu.svg",
+        "name": "Ubuntu",
+        "url": "https://ubuntu.com/"
+    },
+    {
+        "image": "/assets/logos/Apache.svg",
+        "name": "Apache",
+        "url": "https://httpd.apache.org/"
+    },
+    {
+        "image": "/assets/logos/Wordpress.svg",
+        "name": "Wordpress",
+        "url": "https://wordpress.com/fr/"
+    },
+    {
+        "image": "/assets/logos/Prestashop.svg",
+        "name": "Prestashop",
+        "url": "https://www.prestashop.com/"
+    },
+    {
+        "image": "/assets/logos/Figma.svg",
+        "name": "Figma",
+        "url": "https://www.figma.com/"
+    },
+    {
+        "image": "/assets/logos/Blender.svg",
+        "name": "Blender",
+        "url": "https://www.blender.org/"
+    },
+    {
+        "image": "/assets/logos/Affinity_Designer.svg",
+        "name": "Affinity",
+        "url": "https://affinity.serif.com/fr/"
+    }
+]

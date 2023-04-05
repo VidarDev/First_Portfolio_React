@@ -47,7 +47,7 @@
 }
 
 .nav {
-    z-index: 5 !important;
+    z-index: $z_5 !important;
     #nav.nav__content {
         position: fixed;
         top: 50%;
@@ -55,22 +55,26 @@
         width: 100%;
         text-align: center;
         font-size: clamp(2rem, 1.5385rem + 2.0513vw, 4rem);
-        line-height: 1.33;
-        font-weight: 200;
+        line-height: $line_height;
         cursor: pointer;
         visibility: hidden;
+        opacity: 0;
+        transition: all $length-transition + s ease;
+        transition-delay: 0.5s;
         .btn {
-            margin-top: 5rem;
-            opacity: 0;
-            transition: all 0.3s ease;
+            margin-top: 3rem;
+            visibility: hidden;
             font-size: clamp(2rem, 1.5385rem + 2.0513vw, 4rem);
+            span {
+                font-size: clamp(2rem, 1.5385rem + 2.0513vw, 4rem);
+            }
         }
         .nav__list {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 1rem 0;
+            gap: 0.5rem 0;
             cursor: pointer;
             &--item {
                 position: relative;
@@ -83,8 +87,8 @@
                     height: 0.125rem;
                     top: 100%;
                     transform: translate(0%, 0%);
-                    transition: all 0.3s ease;
-                    z-index: -1;
+                    transition: all $length-transition + s ease;
+                    z-index: $z_negative;
                 }
                 &:hover {
                     &:before {
@@ -97,25 +101,24 @@
 }
 
 .nav.is-active {
-    $menu--items--count: 5;
+    $menu--items--count: 4;
     #nav.nav__content {
+        opacity: 1;
         visibility: visible;
         .btn {
-            opacity: 1;
-            transform: translateX(0%);
-            transition: opacity 0.3s ease, transform 0.3s ease;
-            transition-delay: 0.5s;
+            visibility: visible;
         }
         .nav__list {
             &--item {
                 opacity: 1;
                 transform: translateX(0%);
-                transition: opacity 0.3s ease, transform 0.3s ease,
-                    color 0.3s ease;
+                transition: opacity $length-transition + s ease,
+                    transform $length-transition + s ease,
+                    color $length-transition + s ease;
                 @for $i from 0 through $menu--items--count {
                     &:nth-child(#{$i}) {
                         transition-delay: calc(
-                                $length-transition * $i / 8 + 0.5
+                                $length-transition * $i / 3 + 0.5
                             ) +
                             s;
                     }

@@ -1,0 +1,26 @@
+#works .section__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: clamp(2rem, 0rem + 4.1667vw, 5rem);
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+    @media screen and (max-width: $breakpoints-xxxl) {
+    }
+    @media screen and (max-width: $breakpoints-xxl) {
+    }
+    @media screen and (max-width: $breakpoints-xl) {
+    }
+    @media screen and (max-width: $breakpoints-lg) {
+    }
+    @media screen and (max-width: $breakpoints-md) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        row-gap: 2rem;
+    }
+    @media screen and (max-width: $breakpoints-sm) {
+    }
+    @media screen and (max-width: $breakpoints-xs) {
+    }
+}

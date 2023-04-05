@@ -1,16 +1,21 @@
 @import './variables.scss';
 @import './ui_kit.scss';
-@import './styles/ThreeHeader.scss';
-@import './styles/Header.scss';
-@import './styles/Loader.scss';
-@import './styles/HomePage.scss';
-@import './styles/BannerScrollAnimation.scss';
-@import './styles/Card.scss';
-@import './styles/SwiperComponent.scss';
-@import './styles/UI_Button.scss';
-@import './styles/ThreeMail.scss';
 
-.vide {
-    width: 100vw;
-    height: 100vh;
-}
+@import './styles/Loader.scss';
+@import './styles/Header.scss';
+@import './styles/HomePage.scss';
+@import './styles/Footer.scss';
+
+@import './styles/_ThreeHeader.scss';
+@import './styles/_BannerScrollAnimation.scss';
+@import './styles/_Card.scss';
+@import './styles/_SwiperComponent.scss';
+@import './styles/_Button.scss';
+@import './styles/_ThreeMail.scss';
+@import './styles/_ScrollIcon.scss';
+
+@import './styles/SectionAbout.scss';
+@import './styles/SectionContact.scss';
+@import './styles/SectionHome.scss';
+@import './styles/SectionSkills.scss';
+@import './styles/SectionWorks.scss';

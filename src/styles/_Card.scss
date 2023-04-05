@@ -3,7 +3,7 @@
     aspect-ratio: 2/3;
     perspective: 100vw;
     position: relative;
-    margin: 0 auto 2.5rem;
+    margin: 2.5rem auto;
 
     &::before {
         content: '';
@@ -47,7 +47,7 @@
             transparent
         );
     }
-    @media screen and (max-width: $breakpoints-sm) {
+    @media screen and (max-width: $breakpoints-md) {
         width: 70%;
         margin-inline: auto;
         margin: clamp(1.5rem, 0.1765rem + 5.8824vw, 3rem) auto;

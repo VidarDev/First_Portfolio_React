@@ -1,0 +1,73 @@
+.btn {
+    position: relative;
+    display: inline-block;
+    background: $primary;
+    font-family: 'Poppins', sans-serif;
+    color: $text--standard;
+    border: 2px solid $primary;
+    padding: clamp(0.75rem, 0.6923rem + 0.2564vw, 1rem)
+        clamp(1rem, 0.7692rem + 1.0256vw, 2rem);
+    border-radius: 0.5rem;
+    transition: all $length-transition + s;
+    width: fit-content;
+    font-size: clamp(0.875rem, 0.7308rem + 0.641vw, 1.5rem);
+    line-height: 1.33;
+    overflow: hidden;
+    cursor: pointer;
+
+    span {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        transition: all $length-transition + s;
+    }
+
+    &--outline {
+        background: transparent;
+        border: 2px solid $primary;
+        &:hover {
+            border: 2px solid $text--standard;
+            transition: all $length-transition + s;
+            background: transparent !important;
+        }
+    }
+
+    &:hover {
+        border: 2px solid $text--standard;
+        transition: all $length-transition + s;
+
+        span {
+            transform: translateY(300%);
+            transition: all $length-transition + s;
+        }
+
+        &::before {
+            top: 0;
+        }
+    }
+
+    &::before {
+        content: '';
+        left: 0;
+        top: -100%;
+        position: absolute;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        transition: all $length-transition + s;
+    }
+
+    &.icon-download::before {
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgOTYgOTYwIDk2MCI+DQogIDxwYXRoIGQ9Ik00NzkuNzI0IDY5Ny44MDhxLTUuOTUyIDAtMTAuNTg4LTIuMzg1LTQuNjM2LTIuMzg0LTguMjEzLTYuODQ2bC0xMDYuOTctMTA2Ljk3cS00LjkxNS00LjAzLTQuOTkyLTEwLjY0Ni0uMDc3LTYuNjE1IDQuODI3LTExLjI2OSA0LjUxOS00LjY1NCAxMC42OTMtNC42NTQgNi4xNzMgMCAxMC44MjcgNC4yNjlsOTAuMDM4IDkwLjI3VjI5OC40NjFxMC02Ljg0NiAzLjk1OC0xMS4xOTJ0MTAuODg1LTQuMzQ2cTYuOTI2IDAgMTEuMTM4IDQuMzQ2dDQuMjEyIDExLjE5MnYzNTEuMTE2bDg5LjQ0OC05MC4yN3EzLjgyMS0zLjg4NCAxMC4zNzktNC4wNzYgNi41NTctLjE5MyAxMS40NjEgNC40NjEgNC41MTkgNC42NTQgNC41MTkgMTAuODg1dC00LjU5MSAxMS4xNzJMNDk5LjA3NyA2ODguNTc3cS0zLjY1NyA0LjQ2Mi04LjUyOSA2Ljg0Ni00Ljg3MiAyLjM4NS0xMC44MjQgMi4zODVaTTI1NS44NDYgODU0cS0yMi40MTEgMC0zOC42MDktMTYuMDA2LTE2LjE5OS0xNi4wMDYtMTYuMTk5LTM4LjgwMXYtOTAuMzA4cTAtNi44NDcgNC40MDEtMTEuMTkzIDQuNC00LjM0NiAxMS4wNzctNC4zNDYgNi4yOTIgMCAxMC41MDMgNC4zNDYgNC4yMTIgNC4zNDYgNC4yMTIgMTEuMTkzdjkwLjMwOHEwIDkuNjE1IDcuNjkyIDE3LjExNSA3LjY5MiA3LjUgMTYuOTIzIDcuNWg0NDguMzA4cTkuMjMxIDAgMTYuOTIzLTcuNSA3LjY5Mi03LjUgNy42OTItMTcuMTE1di05MC4zMDhxMC02Ljg0NyA0LjQwMS0xMS4xOTMgNC40LTQuMzQ2IDExLjA3Ny00LjM0NiA2LjI5MiAwIDEwLjUwMyA0LjM0NiA0LjIxMiA0LjM0NiA0LjIxMiAxMS4xOTN2OTAuMzA4cTAgMjIuNzk1LTE2LjE5OSAzOC44MDFRNzI2LjU2NSA4NTQgNzA0LjE1NCA4NTRIMjU1Ljg0NloiIGZpbGw9IiMwZjEyMTQiLz4NCjwvc3ZnPg==');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &.icon-mail::before {
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgOTYgOTYwIDk2MCI+DQogIDxwYXRoIGQ9Ik0xNzUuNzkyIDg1NC45NjJxLTIyLjI0MiAwLTM4LjQ0LTE2LjE5OS0xNi4xOTgtMTYuMTk4LTE2LjE5OC0zOC40NTdWMzUxLjY5NHEwLTIyLjI1OSAxNi4xOTgtMzguNDU3IDE2LjE5OC0xNi4xOTkgMzguNDQtMTYuMTk5aDYwOC40MTZxMjIuMjQyIDAgMzguNDQgMTYuMTk5IDE2LjE5OCAxNi4xOTggMTYuMTk4IDM4LjQ1N3Y0NDguNjEycTAgMjIuMjU5LTE2LjE5OCAzOC40NTctMTYuMTk4IDE2LjE5OS0zOC40NCAxNi4xOTlIMTc1Ljc5MlptNjMyLjg2Mi01MDQuODQ2TDQ5Ni4yNjkgNTU5LjE5MnEtNCAyLjM4NS04LjQ2MSAzLjg4NS00LjQ2MiAxLjUtNy44MDggMS41dC03LjgwOC0xLjVxLTQuNDYxLTEuNS02LjgwNy0zLjg4NUwxNTEuMzQ2IDM1MC4xMTZ2NDUwLjAzOHEwIDEwLjc2OSA2LjkyMyAxNy42OTJ0MTcuNjkyIDYuOTIzaDYwOC4wNzhxMTAuNzY5IDAgMTcuNjkyLTYuOTIzdDYuOTIzLTE3LjY5MlYzNTAuMTE2Wk00ODAgNTM0Ljg4NWwzMTQuNTM5LTIwNy42NTRIMTY2LjQ2MUw0ODAgNTM0Ljg4NVpNMTUxLjM0NiAzNTAuMTE2djcuMjY5LTIyLjY2IDEuMDY1LTguNTU5IDguMTU0LTEuNDMyIDIzLjUwMS03LjMwNiA0NzQuNjIxLTQ3NC42NTNaIiBmaWxsPSIjMGYxMjE0Ii8+DQo8L3N2Zz4=');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

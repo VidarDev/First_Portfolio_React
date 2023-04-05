@@ -1,0 +1,22 @@
+#footer {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: $p-16 clamp(3rem, 3.3vw, 3.3vw);
+    .social {
+        display: flex;
+        align-items: self-end;
+        gap: 2rem;
+    }
+    @media screen and (max-width: $breakpoints-xxl) {
+        .social {
+            gap: 1.5rem;
+        }
+    }
+    @media screen and (max-width: $breakpoints-xl) {
+        .social {
+            gap: 1rem;
+        }
+    }
+}
