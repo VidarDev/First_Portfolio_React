@@ -30,6 +30,12 @@
         "url": "https://www.politec-france.com/"
     },
     {
+        "image": "/assets/slides/Marble_Race.webp",
+        "name": "Marble Race Unity",
+        "role": "Level Designer + Développeur",
+        "url": "http://theo.richier.org/unity"
+    },
+    {
         "image": "/assets/slides/CGV.webp",
         "name": "CGV",
         "role": "TMA correction de bugs",
