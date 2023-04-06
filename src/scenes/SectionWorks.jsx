@@ -22,11 +22,7 @@ const SectionWorks = () => {
                     Mes projets récents
                 </h2>
                 <div className="section__container">
-                    <div
-                        data-aos="fade-right"
-                        data-aos-delay="500"
-                        data-aos-duration="500"
-                    >
+                    <div>
                         <p>
                             En tant que{' '}
                             <strong>développeur web Front-end</strong>, j'ai

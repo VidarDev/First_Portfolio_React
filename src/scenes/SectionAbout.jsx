@@ -25,11 +25,7 @@ const SectionAbout = () => {
                 <div className="section__container">
                     <Card />
                     <div>
-                        <p
-                            data-aos="fade-left"
-                            data-aos-delay="500"
-                            data-aos-duration="500"
-                        >
+                        <p>
                             Poursuivant actuellement une{' '}
                             <strong>
                                 <a
@@ -49,11 +45,7 @@ const SectionAbout = () => {
                             de deux ans pour compléter mon diplôme de niveau
                             Bac+5, à partir du 10 septembre 2023.
                         </p>
-                        <p
-                            data-aos="fade-left"
-                            data-aos-delay="500"
-                            data-aos-duration="500"
-                        >
+                        <p>
                             En tant qu'étudiant <strong>assidu</strong> et{' '}
                             <strong>déterminé</strong>, je sais m'adapter
                             rapidement aux diverses situations. Doté d'un grand
@@ -61,11 +53,7 @@ const SectionAbout = () => {
                             suis également en mesure de prendre des initiatives
                             lorsque cela s'avère nécessaire.
                         </p>
-                        <p
-                            data-aos="fade-left"
-                            data-aos-delay="500"
-                            data-aos-duration="500"
-                        >
+                        <p>
                             Les compétences que j'ai développées en matière d'
                             <strong>organisation</strong>, de priorisation des
                             tâches et de travail en autonomie constituent des
@@ -76,11 +64,7 @@ const SectionAbout = () => {
                             nourrit ma motivation pour progresser en tant que
                             développeur Front-end.{' '}
                         </p>
-                        <p
-                            data-aos="fade-left"
-                            data-aos-delay="500"
-                            data-aos-duration="500"
-                        >
+                        <p>
                             Si vous recherchez un étudiant sérieux et passionné
                             pour une alternance en développement web Front-end,
                             n'hésitez pas à me contacter dès maintenant !

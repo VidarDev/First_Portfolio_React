@@ -8,20 +8,20 @@ import { Perf } from 'r3f-perf'
 import { Avatar } from '../models/Avatar'
 import { Canvas, useThree, useFrame } from '@react-three/fiber'
 import { Vector3 } from 'three'
-import { EffectComposer, Glitch } from '@react-three/postprocessing'
+// import { EffectComposer, Glitch } from '@react-three/postprocessing'
 
 const ThreeJs = () => {
     return (
         <>
             {/* <Perf position="top-left" /> */}
 
-            <EffectComposer>
+            {/* <EffectComposer>
                 <Glitch
                     delay={[1.5, 2.5]}
                     duration={[0.1, 0.3]}
                     strength={[0.1, 0.15]}
                 />
-            </EffectComposer>
+            </EffectComposer> */}
 
             <Environment
                 files={[
@@ -84,7 +84,7 @@ const ThreeHeader = () => {
     return (
         <>
             <Suspense fallback={null}>
-                <Canvas shadows className="test">
+                <Canvas shadows className="canvas">
                     <ThreeJs />
                     <Rig />
                 </Canvas>

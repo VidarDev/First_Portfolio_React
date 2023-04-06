@@ -1,6 +1,18 @@
 #home {
-    canvas {
-        width: 100vw !important;
-        height: 100vh !important;
+    .canvas {
+        canvas {
+            @supports (height: 100dvh) {
+                height: 100dvh !important;
+            }
+
+            @supports not (height: 100dvh) {
+                height: 100vh !important;
+            }
+        }
+    }
+    @media screen and (max-width: $breakpoints-md) {
+        .canvas {
+            pointer-events: none !important;
+        }
     }
 }

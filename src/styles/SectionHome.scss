@@ -155,26 +155,29 @@
     }
     @media screen and (max-width: $breakpoints-sm) {
         h1 {
-            font-size: clamp(3rem, 0.1324rem + 12.7451vw, 6.25rem);
+            font-size: clamp(2rem, -0.7244rem + 14.5299vw, 6.25rem);
             line-height: calc(
-                clamp(3rem, 0.1324rem + 12.7451vw, 6.25rem) - 10%
+                clamp(2rem, -0.7244rem + 14.5299vw, 6.25rem) - 10%
             );
             span {
-                font-size: clamp(3rem, 0.1324rem + 12.7451vw, 6.25rem);
+                font-size: clamp(2rem, -0.7244rem + 14.5299vw, 6.25rem);
                 line-height: calc(
-                    clamp(3rem, 0.1324rem + 12.7451vw, 6.25rem) - 10%
+                    clamp(2rem, -0.7244rem + 14.5299vw, 6.25rem) - 10%
                 );
                 &:nth-child(1) {
                     top: calc(
-                        55% - clamp(3rem, 0.1324rem + 12.7451vw, 6.25rem) * 0.9
+                        55% - clamp(2rem, -0.7244rem + 14.5299vw, 6.25rem) * 0.9
                     );
                 }
                 &:nth-child(3) {
                     top: calc(
-                        55% + clamp(3rem, 0.1324rem + 12.7451vw, 6.25rem) * 0.9
+                        55% + clamp(2rem, -0.7244rem + 14.5299vw, 6.25rem) * 0.9
                     );
                 }
             }
+        }
+        .social {
+            display: none !important;
         }
     }
     @media screen and (max-width: $breakpoints-xs) {

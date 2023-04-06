@@ -28,11 +28,7 @@ const SectionSkills = () => {
                     Mes skills
                 </h2>
                 <div className="section__container">
-                    <p
-                        data-aos="fade-down"
-                        data-aos-delay="500"
-                        data-aos-duration="500"
-                    >
+                    <p>
                         Mon principal domaine d'expertise est le{' '}
                         <strong>développement Front-End</strong> en particulier
                         sur les CMS Prestashop et Wordpress. J'ai acquis des
@@ -50,32 +46,20 @@ const SectionSkills = () => {
                         </strong>
                         .
                     </p>
-                    <p
-                        data-aos="fade-down"
-                        data-aos-delay="500"
-                        data-aos-duration="500"
-                    >
+                    <p>
                         Au-delà de mon parcours professionnel, j'ai constamment
                         développé mes compétences techniques. Je maîtrise des
                         technologies telles que React, JS, CSS, HTML, Sass, Gsap
                         et Bootstrap. Par ailleurs, je me suis initié au design
                         en utilisant des outils tels que Figma et Blender.
                     </p>
-                    <p
-                        data-aos="fade-down"
-                        data-aos-delay="500"
-                        data-aos-duration="500"
-                    >
+                    <p>
                         Actuellement, je prépare une{' '}
                         <strong>certification en ligne</strong> en Three.js et
                         JavaScript, dans le but d'élargir mes compétences en
                         développement de sites web 3D.
                     </p>
-                    <p
-                        data-aos="fade-down"
-                        data-aos-delay="500"
-                        data-aos-duration="500"
-                    >
+                    <p>
                         Consultez mon profil{' '}
                         <a
                             className="link"

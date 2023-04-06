@@ -8,6 +8,7 @@ const IconLogo = () => {
             fillRule="evenodd"
             strokeLinejoin="round"
             strokeMiterlimit="2"
+            width="80"
             clipRule="evenodd"
             viewBox="0 0 750 450"
             role="img"
