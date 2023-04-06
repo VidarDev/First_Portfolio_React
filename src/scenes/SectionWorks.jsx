@@ -8,7 +8,6 @@ const SectionWorks = () => {
                 <p
                     className="section__subtitle"
                     data-aos="fade-down"
-                    data-aos-delay="300"
                     data-aos-duration="500"
                 >
                     Mon Portfolio
@@ -16,7 +15,6 @@ const SectionWorks = () => {
                 <h2
                     className="section__title"
                     data-aos="fade-down"
-                    data-aos-delay="500"
                     data-aos-duration="500"
                 >
                     Mes projets récents

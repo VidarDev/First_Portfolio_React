@@ -9,7 +9,6 @@ const SectionAbout = () => {
                 <p
                     className="section__subtitle"
                     data-aos="fade-down"
-                    data-aos-delay="300"
                     data-aos-duration="500"
                 >
                     Mon Introduction
@@ -17,7 +16,6 @@ const SectionAbout = () => {
                 <h2
                     className="section__title"
                     data-aos="fade-down"
-                    data-aos-delay="500"
                     data-aos-duration="500"
                 >
                     À propos

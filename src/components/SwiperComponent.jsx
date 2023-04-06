@@ -30,7 +30,6 @@ const SwiperComponent = () => {
             pagination={{ clickable: true }}
             className="swiper-container"
             data-aos="zoom-in-left"
-            data-aos-delay="500"
             data-aos-duration="500"
         >
             {slidesData.map((slide, index) => (

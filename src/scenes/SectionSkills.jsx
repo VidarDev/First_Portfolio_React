@@ -14,7 +14,6 @@ const SectionSkills = () => {
                 <p
                     className="section__subtitle"
                     data-aos="fade-down"
-                    data-aos-delay="300"
                     data-aos-duration="500"
                 >
                     Ma stack de dev
@@ -22,7 +21,6 @@ const SectionSkills = () => {
                 <h2
                     className="section__title"
                     data-aos="fade-down"
-                    data-aos-delay="500"
                     data-aos-duration="500"
                 >
                     Mes skills
@@ -77,7 +75,7 @@ const SectionSkills = () => {
                                 target="_blank"
                                 href={skill.url}
                                 data-aos="zoom-in-up"
-                                data-aos-delay={index * 150 + 500}
+                                data-aos-delay={index * 100}
                                 data-aos-duration="500"
                             >
                                 <div className="technology__item">

@@ -63,7 +63,6 @@ const Card = () => {
     return (
         <div
             data-aos="zoom-in-right"
-            data-aos-delay="500"
             data-aos-duration="500"
             className="card"
             ref={cardRef}

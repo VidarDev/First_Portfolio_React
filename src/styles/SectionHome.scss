@@ -1,7 +1,13 @@
 #home {
     width: 100vw;
-    height: 100vh;
     position: relative;
+    @supports (height: 100dvh) {
+        height: 100dvh;
+    }
+
+    @supports not (height: 100dvh) {
+        height: 100vh;
+    }
 
     h1 {
         z-index: $z_default;
@@ -166,12 +172,12 @@
                 );
                 &:nth-child(1) {
                     top: calc(
-                        55% - clamp(2rem, -0.7244rem + 14.5299vw, 6.25rem) * 0.9
+                        55% - clamp(2rem, -0.7244rem + 14.5299vw, 6.25rem) * 1.1
                     );
                 }
                 &:nth-child(3) {
                     top: calc(
-                        55% + clamp(2rem, -0.7244rem + 14.5299vw, 6.25rem) * 0.9
+                        55% + clamp(2rem, -0.7244rem + 14.5299vw, 6.25rem) * 1.1
                     );
                 }
             }

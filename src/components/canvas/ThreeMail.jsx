@@ -52,12 +52,7 @@ const ThreeMail = () => {
     return (
         <>
             <Suspense fallback={null}>
-                <Canvas
-                    shadows
-                    data-aos="zoom-in-left"
-                    data-aos-delay="500"
-                    data-aos-duration="500"
-                >
+                <Canvas shadows data-aos="zoom-in-left" data-aos-duration="500">
                     <ThreeJs />
                     <Rig />
                 </Canvas>
